@@ -74,11 +74,11 @@
     var canvas = $("[data-hero-canvas]");
     if (!canvas || !canvas.getContext) return;
     var ctx = canvas.getContext("2d");
-    var hero = canvas.closest(".hero");
+    var hero = canvas.closest(".hero-visual");
     var w = 0, h = 0, dpr = Math.min(window.devicePixelRatio || 1, 2);
     var t0 = performance.now();
 
-    var COLORS = ["198,138,78", "156,107,120", "243,236,224"];
+    var COLORS = ["201,161,90", "79,124,138", "241,233,216"];
 
     function resize() {
       var r = hero.getBoundingClientRect();
@@ -146,7 +146,7 @@
 
     function frame(now) {
       var time = now - t0;
-      ctx.fillStyle = "rgba(19,16,13,0.16)";
+      ctx.fillStyle = "rgba(14,12,10,0.16)";
       ctx.fillRect(0, 0, w, h);
 
       ribbons.forEach(function (rb) { drawRibbon(rb, time); });
@@ -166,7 +166,7 @@
 
     var raf;
     if (reduced) {
-      ctx.fillStyle = "rgba(19,16,13,1)";
+      ctx.fillStyle = "rgba(14,12,10,1)";
       ctx.fillRect(0, 0, w, h);
       ribbons.forEach(function (rb) { drawRibbon(rb, 4000); });
       embers.forEach(function (e) {
@@ -178,7 +178,7 @@
       return;
     }
 
-    ctx.fillStyle = "rgba(19,16,13,1)";
+    ctx.fillStyle = "rgba(14,12,10,1)";
     ctx.fillRect(0, 0, w, h);
     raf = requestAnimationFrame(frame);
 
