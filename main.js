@@ -70,6 +70,133 @@
     }, 6000);
   }
 
+  function initHeroCanvas() {
+    var canvas = $("[data-hero-canvas]");
+    if (!canvas || !canvas.getContext) return;
+    var ctx = canvas.getContext("2d");
+    var hero = canvas.closest(".hero");
+    var w = 0, h = 0, dpr = Math.min(window.devicePixelRatio || 1, 2);
+    var t0 = performance.now();
+
+    var COLORS = ["198,138,78", "156,107,120", "243,236,224"];
+
+    function resize() {
+      var r = hero.getBoundingClientRect();
+      w = r.width; h = r.height;
+      canvas.width = Math.round(w * dpr);
+      canvas.height = Math.round(h * dpr);
+      canvas.style.width = w + "px";
+      canvas.style.height = h + "px";
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    }
+    resize();
+    window.addEventListener("resize", debounce(resize, 200), { passive: true });
+
+    function makeEmbers(n) {
+      var arr = [];
+      for (var i = 0; i < n; i++) {
+        arr.push({
+          x: Math.random() * w,
+          y: h + Math.random() * h * 0.4,
+          r: 1 + Math.random() * 2.2,
+          speed: 8 + Math.random() * 16,
+          drift: 20 + Math.random() * 40,
+          phase: Math.random() * Math.PI * 2,
+          color: COLORS[Math.floor(Math.random() * COLORS.length)],
+          alpha: 0.25 + Math.random() * 0.45
+        });
+      }
+      return arr;
+    }
+    var embers = makeEmbers(46);
+
+    function ribbon(seed, colorIdx) {
+      return {
+        seed: seed,
+        color: COLORS[colorIdx],
+        points: [0, 1, 2, 3].map(function (i) {
+          return { baseY: 0.2 + i * 0.22, amp: 40 + Math.random() * 60, speed: 0.00006 + Math.random() * 0.00006, phase: Math.random() * Math.PI * 2 };
+        })
+      };
+    }
+    var ribbons = [ribbon(1, 0), ribbon(2, 1)];
+
+    function drawRibbon(rb, time) {
+      var pts = rb.points.map(function (p, i) {
+        var x = (w / 3) * i - w * 0.15 + Math.sin(time * p.speed + p.phase + rb.seed) * 60;
+        var y = h * p.baseY + Math.sin(time * p.speed * 1.3 + p.phase) * p.amp;
+        return { x: x, y: y };
+      });
+      ctx.beginPath();
+      ctx.moveTo(pts[0].x, pts[0].y);
+      for (var i = 1; i < pts.length - 1; i++) {
+        var xc = (pts[i].x + pts[i + 1].x) / 2;
+        var yc = (pts[i].y + pts[i + 1].y) / 2;
+        ctx.quadraticCurveTo(pts[i].x, pts[i].y, xc, yc);
+      }
+      var grad = ctx.createLinearGradient(0, 0, w, h);
+      grad.addColorStop(0, "rgba(" + rb.color + ",0)");
+      grad.addColorStop(0.5, "rgba(" + rb.color + ",0.35)");
+      grad.addColorStop(1, "rgba(" + rb.color + ",0)");
+      ctx.strokeStyle = grad;
+      ctx.lineWidth = 1.4;
+      ctx.lineCap = "round";
+      ctx.stroke();
+    }
+
+    function frame(now) {
+      var time = now - t0;
+      ctx.fillStyle = "rgba(19,16,13,0.16)";
+      ctx.fillRect(0, 0, w, h);
+
+      ribbons.forEach(function (rb) { drawRibbon(rb, time); });
+
+      embers.forEach(function (e) {
+        e.y -= (e.speed / 60);
+        e.x += Math.sin(time * 0.0006 + e.phase) * (e.drift / 6000);
+        if (e.y < -10) { e.y = h + 10; e.x = Math.random() * w; }
+        ctx.beginPath();
+        ctx.arc(e.x, e.y, e.r, 0, Math.PI * 2);
+        ctx.fillStyle = "rgba(" + e.color + "," + e.alpha + ")";
+        ctx.fill();
+      });
+
+      raf = requestAnimationFrame(frame);
+    }
+
+    var raf;
+    if (reduced) {
+      ctx.fillStyle = "rgba(19,16,13,1)";
+      ctx.fillRect(0, 0, w, h);
+      ribbons.forEach(function (rb) { drawRibbon(rb, 4000); });
+      embers.forEach(function (e) {
+        ctx.beginPath();
+        ctx.arc(e.x, e.y, e.r, 0, Math.PI * 2);
+        ctx.fillStyle = "rgba(" + e.color + "," + e.alpha + ")";
+        ctx.fill();
+      });
+      return;
+    }
+
+    ctx.fillStyle = "rgba(19,16,13,1)";
+    ctx.fillRect(0, 0, w, h);
+    raf = requestAnimationFrame(frame);
+
+    document.addEventListener("visibilitychange", function () {
+      if (document.hidden) { cancelAnimationFrame(raf); }
+      else { raf = requestAnimationFrame(frame); }
+    });
+  }
+
+  function debounce(fn, ms) {
+    var id;
+    return function () {
+      clearTimeout(id);
+      var args = arguments;
+      id = setTimeout(function () { fn.apply(null, args); }, ms);
+    };
+  }
+
   function initMagnetic() {
     if (!fineHover) return;
     var els = $$("[data-magnetic]");
@@ -92,6 +219,7 @@
     safe(initSmoothAnchors, "initSmoothAnchors");
     safe(initReveals, "initReveals");
     safe(initMagnetic, "initMagnetic");
+    safe(initHeroCanvas, "initHeroCanvas");
     document.documentElement.classList.add("is-ready");
   }
 

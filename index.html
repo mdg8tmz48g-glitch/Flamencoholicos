@@ -11,16 +11,30 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap">
 
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="styles.css?v=20260720">
+<link rel="stylesheet" href="styles.css?v=20260720b">
 </head>
 <body>
 
 <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
-<header class="nav" data-nav>
-  <div class="nav-inner container">
-    <a href="#top" class="nav-brand">Flamencohólicos</a>
-    <a href="#reservar" class="btn btn-nav">Reservar plaza</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="icon-sparkle" viewBox="0 0 24 24">
+    <path d="M12 0 C12.6 6.2 13.5 9.5 16 12 C18.5 14.5 21.8 15.4 24 16 C21.8 16.6 18.5 17.5 16 20 C13.5 22.5 12.6 25.8 12 32 C11.4 25.8 10.5 22.5 8 20 C5.5 17.5 2.2 16.6 0 16 C2.2 15.4 5.5 14.5 8 12 C10.5 9.5 11.4 6.2 12 0 Z" transform="scale(0.75)" fill="currentColor"/>
+  </symbol>
+</svg>
+
+<header class="topbar" data-nav>
+  <div class="topbar-inner container">
+    <a href="#top" class="brand-mark">Flamencohólicos</a>
+
+    <nav class="pill-nav" aria-label="Navegación principal">
+      <a href="#top">Inicio</a><span aria-hidden="true">·</span>
+      <a href="#metodo">Método</a><span aria-hidden="true">·</span>
+      <a href="#carmen">Carmen</a><span aria-hidden="true">·</span>
+      <a href="#detalles">La clase</a>
+    </nav>
+
+    <a href="#detalles" class="btn btn-nav">Reservar</a>
   </div>
 </header>
 
@@ -28,76 +42,41 @@
 
   <!-- ================= HERO ================= -->
   <section class="hero" id="top">
-    <div class="hero-aura" aria-hidden="true"></div>
-    <svg class="hero-lines" viewBox="0 0 1200 1200" aria-hidden="true" preserveAspectRatio="xMidYMid slice">
-      <defs>
-        <linearGradient id="lineGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stop-color="#C68A4E" stop-opacity="0.55"/>
-          <stop offset="100%" stop-color="#C68A4E" stop-opacity="0"/>
-        </linearGradient>
-        <linearGradient id="lineGrad2" x1="100%" y1="0%" x2="0%" y2="100%">
-          <stop offset="0%" stop-color="#9C6B78" stop-opacity="0.45"/>
-          <stop offset="100%" stop-color="#9C6B78" stop-opacity="0"/>
-        </linearGradient>
-      </defs>
-      <path class="flow-path flow-path--1" d="M -100 850 C 250 650, 350 950, 650 700 S 1150 450, 1350 600" fill="none" stroke="url(#lineGrad1)" stroke-width="1.4"/>
-      <path class="flow-path flow-path--2" d="M -100 300 C 300 200, 250 500, 600 380 S 1000 150, 1350 250" fill="none" stroke="url(#lineGrad2)" stroke-width="1"/>
-      <path class="flow-path flow-path--3" d="M -100 1050 C 300 1150, 500 900, 800 1020 S 1150 1150, 1350 1000" fill="none" stroke="url(#lineGrad1)" stroke-width="0.8"/>
-    </svg>
+    <canvas class="hero-canvas" data-hero-canvas aria-hidden="true"></canvas>
+    <div class="hero-scrim" aria-hidden="true"></div>
+    <div class="hero-vignette" aria-hidden="true"></div>
 
-    <div class="container hero-grid">
-      <div class="hero-content">
-        <p class="kicker reveal">Clase magistral · gratuita y en directo</p>
-        <h1 class="hero-title reveal">
-          No aprendas <em>más pasos</em>.<br>
-          Aprende a <em>conversar</em><br>
-          con el flamenco.
-        </h1>
-        <p class="hero-sub reveal">
-          Una metodología nueva para dejar de repetir coreografías y empezar a improvisar con seguridad, escuchando de verdad el cante, la guitarra y el compás.
-        </p>
+    <div class="container hero-inner">
+      <p class="kicker kicker--center reveal">
+        <svg class="sparkle" width="14" height="14"><use href="#icon-sparkle"/></svg>
+        Clase magistral · gratuita y en directo
+      </p>
 
-        <div class="hero-meta reveal">
-          <div class="hero-meta-item">
-            <span class="hero-meta-label">Fecha</span>
-            <span class="hero-meta-value">10 de septiembre</span>
-          </div>
-          <div class="hero-meta-divider" aria-hidden="true"></div>
-          <div class="hero-meta-item">
-            <span class="hero-meta-label">Hora</span>
-            <span class="hero-meta-value">19:00h · España</span>
-          </div>
-          <div class="hero-meta-divider" aria-hidden="true"></div>
-          <div class="hero-meta-item">
-            <span class="hero-meta-label">Con</span>
-            <span class="hero-meta-value">Carmen Talegona</span>
-          </div>
-        </div>
+      <h1 class="hero-title reveal">
+        No aprendas más pasos.<br>
+        Aprende a <em>conversar</em><br>
+        con el flamenco.
+      </h1>
 
-        <div class="hero-actions reveal">
-          <a class="btn btn-primary" data-magnetic href="https://wa.me/34600000000?text=FLAMENCO%2C%20quiero%20reservar%20mi%20plaza" target="_blank" rel="noopener">
-            Reservar mi plaza por WhatsApp
-          </a>
-          <p class="hero-actions-note">Plazas limitadas · es gratuita</p>
-        </div>
+      <p class="hero-sub reveal">
+        Una metodología nueva para dejar de repetir coreografías y empezar a improvisar con seguridad, escuchando de verdad el cante, la guitarra y el compás.
+      </p>
+
+      <div class="hero-actions reveal">
+        <a class="btn btn-cream" data-magnetic href="https://wa.me/34600000000?text=FLAMENCO%2C%20quiero%20reservar%20mi%20plaza" target="_blank" rel="noopener">
+          Reservar mi plaza
+        </a>
+        <a class="btn btn-ghost" href="#metodo">Descubre la metodología</a>
       </div>
-
-      <figure class="hero-portrait reveal">
-        <div class="hero-portrait-frame">
-          <img src="assets/img/carmen-hero.jpg" alt="Carmen Talegona" loading="eager" fetchpriority="high" onerror="this.style.opacity='0'">
-          <div class="hero-portrait-fallback" aria-hidden="true"></div>
-        </div>
-        <figcaption>Carmen Talegona</figcaption>
-      </figure>
     </div>
 
-    <div class="compas" aria-hidden="true">
-      <span class="compas-tick compas-tick--accent"></span>
-      <span class="compas-tick"></span><span class="compas-tick"></span><span class="compas-tick"></span>
-      <span class="compas-tick compas-tick--accent"></span>
-      <span class="compas-tick"></span><span class="compas-tick"></span><span class="compas-tick"></span>
-      <span class="compas-tick compas-tick--accent"></span>
-      <span class="compas-tick"></span><span class="compas-tick"></span><span class="compas-tick"></span>
+    <div class="hero-badge reveal" aria-hidden="false">
+      <span class="hero-badge-dot"></span>
+      <span>En directo</span>
+      <span class="hero-badge-sep">·</span>
+      <span>10 de septiembre — 19:00h España</span>
+      <span class="hero-badge-sep">·</span>
+      <span>Gratuita</span>
     </div>
   </section>
 
@@ -116,10 +95,29 @@
     </div>
   </section>
 
+  <!-- ================= MARQUEE ================= -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Escucha</span><span class="marquee-dot">✦</span>
+      <span>Compás</span><span class="marquee-dot">✦</span>
+      <span>Cante</span><span class="marquee-dot">✦</span>
+      <span>Guitarra</span><span class="marquee-dot">✦</span>
+      <span>Improvisación</span><span class="marquee-dot">✦</span>
+      <span>Escucha</span><span class="marquee-dot">✦</span>
+      <span>Compás</span><span class="marquee-dot">✦</span>
+      <span>Cante</span><span class="marquee-dot">✦</span>
+      <span>Guitarra</span><span class="marquee-dot">✦</span>
+      <span>Improvisación</span><span class="marquee-dot">✦</span>
+    </div>
+  </div>
+
   <!-- ================= LA METODOLOGÍA ================= -->
   <section class="section section-method" id="metodo">
     <div class="container">
-      <p class="kicker kicker--center reveal">La metodología</p>
+      <p class="kicker kicker--center reveal">
+        <svg class="sparkle" width="12" height="12"><use href="#icon-sparkle"/></svg>
+        La metodología
+      </p>
       <h2 class="section-title reveal">Un lenguaje, no una lista de pasos</h2>
 
       <div class="pillars">
@@ -156,16 +154,22 @@
   </section>
 
   <!-- ================= SOBRE CARMEN ================= -->
-  <section class="section section-teacher">
+  <section class="section section-teacher" id="carmen">
     <div class="container teacher-grid">
       <div class="teacher-portrait reveal">
-        <div class="teacher-portrait-frame">
-          <img src="assets/img/carmen-teacher.jpg" alt="Carmen Talegona" loading="lazy" onerror="this.style.opacity='0'">
-          <div class="teacher-portrait-fallback" aria-hidden="true"></div>
+        <div class="teacher-portrait-frame-wrap">
+          <div class="teacher-portrait-frame">
+            <img src="assets/img/carmen-teacher.jpg" alt="Carmen Talegona" loading="lazy" onerror="this.style.opacity='0'">
+            <div class="teacher-portrait-fallback" aria-hidden="true"></div>
+          </div>
+          <svg class="sparkle sparkle--float" width="20" height="20"><use href="#icon-sparkle"/></svg>
         </div>
       </div>
       <div class="teacher-body">
-        <p class="kicker reveal">Quién imparte la clase</p>
+        <p class="kicker reveal">
+          <svg class="sparkle" width="12" height="12"><use href="#icon-sparkle"/></svg>
+          Quién imparte la clase
+        </p>
         <h2 class="section-title reveal">Carmen Talegona</h2>
         <p class="teacher-text reveal">
           Después de años enseñando a cientos de alumnas, Carmen vio siempre el mismo patrón: se aprendían pasos, pero no se aprendía a conversar con la música. Se sabía qué hacer, pero no cuándo hacerlo.
@@ -174,6 +178,10 @@
           Por eso construyó, paso a paso y escuchando a cada alumna, una manera distinta de enseñar: una que no busca que bailes como otra persona, sino que encuentres tu propia voz dentro del flamenco.
         </p>
         <p class="teacher-quote reveal">"El flamenco es un diálogo vivo. Y nadie puede mantener una conversación repitiendo frases de memoria."</p>
+        <a class="pill-doodle reveal" href="#detalles">
+          <span>Ver detalles de la clase</span>
+          <svg class="pill-doodle-circle" viewBox="0 0 140 56" aria-hidden="true"><ellipse cx="70" cy="28" rx="67" ry="24"/></svg>
+        </a>
       </div>
     </div>
   </section>
@@ -182,7 +190,10 @@
   <section class="section section-details" id="detalles">
     <div class="container">
       <div class="details-card reveal">
-        <p class="kicker kicker--center">Detalles de la clase</p>
+        <p class="kicker kicker--center">
+          <svg class="sparkle" width="12" height="12"><use href="#icon-sparkle"/></svg>
+          Detalles de la clase
+        </p>
         <h2 class="section-title section-title--center">Reserva tu plaza</h2>
 
         <dl class="details-list">
@@ -208,7 +219,7 @@
           </div>
         </dl>
 
-        <a class="btn btn-primary btn-large" data-magnetic href="https://wa.me/34600000000?text=FLAMENCO%2C%20quiero%20reservar%20mi%20plaza" target="_blank" rel="noopener" id="reservar">
+        <a class="btn btn-cream btn-large" data-magnetic href="https://wa.me/34600000000?text=FLAMENCO%2C%20quiero%20reservar%20mi%20plaza" target="_blank" rel="noopener" id="reservar">
           Escribe FLAMENCO y reserva tu plaza
         </a>
         <p class="details-note">Te uniremos a la comunidad de WhatsApp con toda la información para conectarte el día de la clase.</p>
@@ -245,10 +256,13 @@
   <section class="section section-final">
     <div class="hero-aura hero-aura--final" aria-hidden="true"></div>
     <div class="container final-content">
-      <p class="kicker kicker--center reveal">Te espero a bordo</p>
+      <p class="kicker kicker--center reveal">
+        <svg class="sparkle" width="12" height="12"><use href="#icon-sparkle"/></svg>
+        Te espero a bordo
+      </p>
       <h2 class="final-title reveal">Empieza a bailar <em>como tú</em>.</h2>
       <p class="final-sub reveal">10 de septiembre · 19:00h · España · En directo y gratuita</p>
-      <a class="btn btn-primary btn-large reveal" data-magnetic href="https://wa.me/34600000000?text=FLAMENCO%2C%20quiero%20reservar%20mi%20plaza" target="_blank" rel="noopener">
+      <a class="btn btn-cream btn-large reveal" data-magnetic href="https://wa.me/34600000000?text=FLAMENCO%2C%20quiero%20reservar%20mi%20plaza" target="_blank" rel="noopener">
         Reservar mi plaza por WhatsApp
       </a>
     </div>
@@ -264,6 +278,6 @@
 </footer>
 
 <script defer src="lib/manifest.js"></script>
-<script defer src="main.js?v=20260720"></script>
+<script defer src="main.js?v=20260720b"></script>
 </body>
 </html>
