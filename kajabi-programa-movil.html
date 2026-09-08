@@ -1,0 +1,487 @@
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,500;0,6..96,700&family=Cormorant+Garamond:ital,wght@1,400;1,500;1,600;1,700&family=Jost:wght@300;400;500&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet" />
+<style>
+  html, body { margin: 0; padding: 0; background: #2A2320; }
+  a { color: #3F1D02; }
+  a:hover { color: #6B0B33; }
+  #m { width: 100%; max-width: 430px; margin: 0 auto; background: #FFF6E2; overflow: hidden; }
+  @media (min-width: 431px) { #m h1 { font-size: 33px !important; } }
+  .crop { position: relative; width: 100%; overflow: hidden; line-height: 0; }
+  .crop.ph { margin: 0 22px; width: auto; }
+  .veil { position: absolute; inset: 0; }
+  .ovt { position: absolute; z-index: 2; margin: 0; color: #FFF6E2; }
+  .scr.ovt { color: #FFF6E2; }
+  .crop img { position: absolute; display: block; }
+  .scr { font-family: 'Cormorant Garamond', Georgia, serif; font-style: italic; font-weight: 600; color: #262421; letter-spacing: 0.01em; line-height: 1.15; }
+  .bd { font-family: 'Jost', sans-serif; font-size: 17px; line-height: 1.55; color: #262421; text-wrap: pretty; }
+  .bd.ctr { text-align: center; align-items: center; }
+  .bd p { margin: 0; }
+  .col { display: flex; flex-direction: column; gap: 14px; }
+  #bonos-rail::-webkit-scrollbar { display: none; }
+  .cta { display: inline-flex; align-items: center; justify-content: center; min-height: 56px; padding: 0 30px; background: #6B0B33; color: #FFF3E4; text-decoration: none; font-family: 'Jost', sans-serif; font-size: 14px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; border-radius: 999px; box-shadow: 0 14px 30px rgba(90,40,6,0.28); }
+</style>
+<div id="m">
+
+  <!-- 01 HERO -->
+  <div style="position: relative; background: #C08211;">
+    <div class="crop" style="aspect-ratio: 953 / 1650;">
+      <img src="img/hero-vertical.jpg" alt="Carmen Talegona" style="position: static; width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%;" />
+      <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(120,78,8,0.28) 0%, rgba(120,78,8,0) 26%, rgba(60,36,4,0) 52%, rgba(46,26,2,0.62) 82%, rgba(38,20,2,0.82) 100%);"></div>
+      <div style="position: absolute; left: 22px; right: 22px; top: 16px; display: flex; flex-direction: column; align-items: center; gap: 10px; line-height: 1;">
+        <div style="align-self: flex-start; display: flex; align-items: center; gap: 12px; color: #3F1D02;">
+          <span style="width: 26px; height: 1px; background: #6B3405; opacity: 0.6; display: block;"></span>
+          <span style="font-family: 'Jost', sans-serif; font-size: 11px; letter-spacing: 0.34em; text-transform: uppercase; font-weight: 500;">Carmen Talegona</span>
+        </div>
+        <img src="img/monograma.png" alt="Monograma Flamencoholicos" style="position: static; width: 42px; height: auto; margin-top: 2px; filter: drop-shadow(0 6px 18px rgba(84,44,4,0.45)) drop-shadow(0 0 22px rgba(255,200,110,0.55));" />
+        <h1 style="margin: 0; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: clamp(23px, 7.2vw, 33px); line-height: 0.92; letter-spacing: -0.02em; text-transform: uppercase; white-space: nowrap; color: #FFFFFF; text-shadow: 0 6px 22px rgba(84,44,4,0.45);">Flamenco<span style="color: #FBE3AE; text-shadow: 0 0 14px rgba(255,205,105,0.6);">holico<span style="font-size: 1.3em; line-height: 0.6; vertical-align: -0.06em;">s</span></span></h1>
+        <span style="font-family: 'Jost', sans-serif; font-size: 10px; font-weight: 500; letter-spacing: 0.24em; text-transform: uppercase; color: #3F1D02;">El arte de saber conversar</span>
+      </div>
+      <div style="position: absolute; left: 22px; right: 22px; bottom: 30px; display: flex; flex-direction: column; align-items: center; gap: 22px;">
+        <p class="bd" style="margin: 0; color: #FFFFFF; text-shadow: 0 2px 14px rgba(30,14,2,0.75);">Aprende a improvisar y a bailar conversando con el cante y la guitarra, para dejar de repetir coreografías y empezar a crear un baile propio, auténtico y vivo.</p>
+        <a href="https://www.carmentalegona.com/llamada-de-venta-c11042d3-c27d-4b14-970c-1e1a50f5f3d9" target="_blank" rel="noopener" class="cta">Quiero aprender</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 02 CONVERSACIÓN -->
+  <section data-screen-label="02 Conversación" style="background: #FFF6E2; padding: 40px 0 44px;">
+    <div class="crop ph" style="aspect-ratio: 934 / 633;">
+      <img src="img/m-02-conversacion.jpg" alt="El flamenco es una conversación" style="position: static; width: 100%; height: 100%; object-fit: cover; display: block;" />
+    </div>
+    <div class="bd col ctr" style="padding: 26px 22px 0; color: #3F1D02;">
+      <p>Imagina un diálogo entre tres personas.</p>
+      <p>Una habla.</p>
+      <p>Otra escucha y responde.</p>
+      <p>La tercera espera su momento para hablar.</p>
+      <p>Ahora imagina las tres voces al mismo tiempo.</p>
+      <p>Una intenta terminar su frase mientras otra ya está hablando por encima.</p>
+      <p>La tercera sube todavía más la voz para hacerse escuchar.</p>
+      <p>¿Qué quedaría de esa conversación?</p>
+      <p style="font-weight: 500; color: #6B0B33;">Nada. Solo ruido.</p>
+    </div>
+  </section>
+
+  <!-- 03 TRES VOCES -->
+  <section data-screen-label="03 Tres voces" style="background: #FFF6E2; padding: 44px 0 44px;">
+    <div class="crop ph" style="aspect-ratio: 1065 / 671;">
+      <img src="img/m-03-tresvoces.jpg" alt="3 voces — una misma historia" style="position: static; width: 100%; height: 100%; object-fit: cover; display: block;" />
+    </div>
+    <div class="bd col ctr" style="padding: 26px 22px 0;">
+      <p>En el baile flamenco somos tres los que estamos conversando.</p>
+      <p>El cante se expresa desde la voz, la guitarra, desde las notas y cuerpo, desde el movimiento.</p>
+      <p style="font-weight: 500; color: #6B0B33;">Tres lenguajes diferentes para contar, sentir y expresar una misma historia.</p>
+      <p>Y, como en cualquier conversación, hay momentos para hablar y momentos para escuchar.</p>
+      <p>Porque si el baile pisa constantemente al cante, si no deja que la guitarra termine su melodía o si los músicos no saben cuándo darle espacio al baile, ya no hay conversación.</p>
+      <p>Hay tres monólogos ocurriendo al mismo tiempo.</p>
+    </div>
+  </section>
+
+  <!-- 04 EL MONÓLOGO -->
+  <section data-screen-label="04 El monólogo" style="background: #FFF6E2; padding: 44px 0 44px;">
+    <div class="crop ph" style="aspect-ratio: 1000 / 668;">
+      <img src="img/m-04-monologo.jpg" alt="El monólogo" style="position: static; width: 100%; height: 100%; object-fit: cover; display: block;" />
+    </div>
+    <div class="bd col ctr" style="padding: 26px 22px 0;">
+      <p>Esto, que en una conversación nos parecería absurdo, es exactamente lo que puede ocurrir cuando bailamos sin entender el lenguaje del flamenco.</p>
+      <div style="display: inline-flex; flex-direction: column; align-items: center; gap: 10px; margin: 4px 0;">
+        <span style="display: flex; align-items: baseline; gap: 0.6em;"><span style="color: #A8114B;">✓</span>Tienes recursos</span>
+        <span style="display: flex; align-items: baseline; gap: 0.6em;"><span style="color: #A8114B;">✓</span>Tienes técnica</span>
+        <span style="display: flex; align-items: baseline; gap: 0.6em;"><span style="color: #A8114B;">✓</span>Has aprendido pasos y coreografías</span>
+      </div>
+      <p>Pero cuando llega el momento de improvisar, no sabes qué hacer con todo eso.</p>
+      <p style="font-weight: 500; color: #6B0B33;">Entonces empiezas a ejecutar<br />tu propio monólogo.</p>
+      <p>Mientras la letra cuenta una cosa, tú haces otra, porque no la estás escuchando.</p>
+      <p>Mientras la guitarra propone, tú sigues pensando en lo que habías preparado.</p>
+      <p>Y cuando algo cambia no sabes cómo reaccionar.</p>
+      <p>Porque te han enseñado a bailar, pero no necesariamente a conversar bailando.</p>
+    </div>
+  </section>
+
+  <!-- 05 EL DUENDE -->
+  <section data-screen-label="05 El duende" style="background: #FFF6E2; padding: 44px 0 44px;">
+    <div class="crop ph" style="aspect-ratio: 1074 / 703;">
+      <img src="img/m-05-duende.jpg" alt="El duende" style="position: static; width: 100%; height: 100%; object-fit: cover; display: block;" />
+    </div>
+    <div class="bd col ctr" style="padding: 26px 22px 0;">
+      <p>Cuando conoces el lenguaje, los pasos dejan de ser algo que tienes que recordar y ordenar.</p>
+      <p>Se convierten en recursos que puedes utilizar para expresar tu versión de la historia.</p>
+      <p>Empiezas a preguntarte:</p>
+      <p style="font-weight: 500; color: #6B0B33;">«¿Qué me están diciendo y qué quiero responder?»</p>
+      <p>Ahí es donde aparece el duende: en la perfecta conexión de los tres pilares: baile, cante y guitarra.</p>
+    </div>
+  </section>
+
+  <!-- 06 PROGRAMA -->
+  <section data-screen-label="06 Programa" style="background: #A8114B; padding: 44px 0 0;">
+    <h2 style="margin: 0 22px 26px; text-align: center; font-family: 'Jost', sans-serif; font-weight: 400; font-size: 24px; line-height: 1.22; letter-spacing: 0.03em; text-transform: uppercase; color: #FFF6E2;">¿Cómo pasas de saber bailar a saber expresarte?</h2>
+    <div class="crop ph" style="aspect-ratio: 0.672;">
+      <img src="img/programa.jpg" alt="Carmen de perfil con capote y sombrero" style="width: 400%; height: 100%; left: -146%; top: 0;" />
+    </div>
+    <div style="padding: 26px 22px 44px; display: flex; flex-direction: column; align-items: center; gap: 26px;">
+      <div class="bd col ctr" style="color: #FFF6E2;">
+        <p>Para ello he creado el <span style="white-space: nowrap;">PROGRAMA FLAMENCOHOLICOS</span>: un recorrido de 12 meses para que desarrolles las herramientas, la confianza y el conocimiento necesarios para dejar de depender de lo aprendido y empezar a tomar tus propias decisiones mientras bailas.</p>
+      </div>
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 14px; font-family: 'Jost', sans-serif; color: #FFF6E2;">
+        <span style="font-size: 13px; font-weight: 500; letter-spacing: 0.24em; text-transform: uppercase; color: #FFC9DC;">Vas a aprender</span>
+        <div style="display: inline-flex; flex-direction: column; align-items: flex-start; gap: 10px; font-size: 19px; line-height: 1.3;">
+          <span style="display: flex; align-items: center; gap: 0.55em;"><span style="color: #FFC9DC; font-size: 0.8em;">✦</span>A escuchar</span>
+          <span style="display: flex; align-items: center; gap: 0.55em;"><span style="color: #FFC9DC; font-size: 0.8em;">✦</span>A responder</span>
+          <span style="display: flex; align-items: center; gap: 0.55em;"><span style="color: #FFC9DC; font-size: 0.8em;">✦</span>A conversar</span>
+        </div>
+      </div>
+      <a href="https://www.carmentalegona.com/llamada-de-venta-c11042d3-c27d-4b14-970c-1e1a50f5f3d9" target="_blank" rel="noopener" class="cta" style="background: #C08211; color: #3F1D02;">Quiero aprender</a>
+    </div>
+  </section>
+
+  <!-- 07 · 08 LAS CUATRO ETAPAS -->
+  <section data-screen-label="07 Etapas" style="background: #A8114B; padding: 8px 22px 44px;">
+    <h2 style="margin: 0 0 26px; text-align: center; font-family: 'Jost', sans-serif; font-weight: 400; font-size: 20px; line-height: 1.3; letter-spacing: 0.12em; text-transform: uppercase; color: #FFF6E2;">Un año.<br />Cuatro etapas.<br />Una transformación profunda.</h2>
+    <div style="display: flex; flex-direction: column; gap: 16px;">
+      <div style="background: #F4EEE0; padding: 24px 22px 26px; display: flex; flex-direction: column; gap: 5px;">
+        <p style="margin: 0 0 2px; font-family: 'Jost', sans-serif; font-size: 13px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #A8114B; line-height: 1.3;">01 — Fundamentos del flamenco</p>
+        <p class="bd" style="font-size: 16px;">Trabajarás la técnica corporal, la disociación, la base de ballet aplicada al flamenco y el conocimiento del cante.</p>
+        <p class="bd" style="font-size: 16px;">No para acumular más pasos, sino para comprender y ampliar los recursos que ya tienes y bailar libremente.</p>
+      </div>
+      <div style="background: #F4EEE0; padding: 24px 22px 26px; display: flex; flex-direction: column; gap: 5px;">
+        <p style="margin: 0 0 2px; font-family: 'Jost', sans-serif; font-size: 13px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #A8114B; line-height: 1.3;">02 — Aprendiendo a improvisar</p>
+        <p class="bd" style="font-size: 16px;">Vamos a trabajar aquello que muchas veces te impide improvisar, aunque tengas técnica y recursos: el miedo a equivocarte, la inseguridad y el bloqueo.</p>
+        <p class="bd" style="font-size: 16px;">Trabajarás la liberación emocional a través de la danza, el desbloqueo corporal, la interpretación y el arte dramático.</p>
+      </div>
+      <div style="background: #F4EEE0; padding: 24px 22px 26px; display: flex; flex-direction: column; gap: 5px;">
+        <p style="margin: 0 0 2px; font-family: 'Jost', sans-serif; font-size: 13px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #A8114B; line-height: 1.3;">03 — Importancia del cante</p>
+        <p class="bd" style="font-size: 16px;">Aprenderás a reconocer y utilizar tus recursos dentro de la estructura del cante y a ponerlos en práctica con músicos.</p>
+        <p class="bd" style="font-size: 16px;">Esta etapa incluye un intensivo presencial de 10 días y práctica escénica para que puedas consolidar e integrar lo aprendido.</p>
+      </div>
+      <div style="background: #F4EEE0; padding: 24px 22px 26px; display: flex; flex-direction: column; gap: 5px;">
+        <p style="margin: 0 0 2px; font-family: 'Jost', sans-serif; font-size: 13px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #A8114B; line-height: 1.3;">04 — Encontrando tu identidad</p>
+        <p class="bd" style="font-size: 16px;">Explorarás diferentes formas de expresión dentro del flamenco y trabajarás el desarrollo de un movimiento corporal con estilo propio.</p>
+        <p class="bd" style="font-size: 16px;">También descubrirás qué elementos, recursos y características representan mejor tu manera de bailar.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10 APRENDE A TU RITMO -->
+  <section data-screen-label="10 Aprende a tu ritmo" style="background: #FFF6E2; padding: 44px 22px 0;">
+    <h2 style="margin: 0 0 16px; text-align: center; font-family: 'Jost', sans-serif; font-weight: 400; font-size: 21px; line-height: 1.25; letter-spacing: 0.03em; text-transform: uppercase; color: #262421;">No vas a estar solo durante este recorrido</h2>
+    <p class="bd" style="text-align: center;">FLAMENCOHOLICOS no es un curso que compras, ves y dejas atrás.<br />Durante un año vas a tener formación, práctica, acompañamiento y una comunidad para que puedas avanzar de verdad.</p>
+    <h3 style="margin: 34px 0 14px; text-align: center; font-family: 'Jost', sans-serif; font-weight: 500; font-size: 17px; letter-spacing: 0.14em; text-transform: uppercase; color: #A8114B; line-height: 1.3;">Aprende a tu ritmo</h3>
+    <div class="bd col ctr">
+      <p>Tendrás acceso a todo el contenido pregrabado del programa para que puedas estudiar, repetir y practicar cada concepto las veces que necesites.</p>
+      <p>Desde la técnica y el conocimiento del cante hasta la improvisación, la interpretación y la construcción de tu identidad.</p>
+    </div>
+    <h3 style="margin: 34px 0 14px; text-align: center; font-family: 'Jost', sans-serif; font-weight: 500; font-size: 17px; letter-spacing: 0.14em; text-transform: uppercase; color: #A8114B; line-height: 1.3;">Acompañamiento personalizado</h3>
+    <div class="bd col ctr">
+      <p>No tendrás que quedarte solo con tus dudas.</p>
+      <p>Tendrás sesiones en directo, correcciones personales y un encuentro de preguntas y respuestas con Carmen&nbsp;Talegona cada 15 días.</p>
+    </div>
+  </section>
+
+  <!-- 11 BAILA CON MÚSICOS -->
+  <section data-screen-label="11 Baila con músicos" style="background: #FFF6E2; padding: 40px 0 48px;">
+    <h3 style="margin: 0 22px 16px; text-align: center; font-family: 'Jost', sans-serif; font-weight: 500; font-size: 17px; letter-spacing: 0.14em; text-transform: uppercase; color: #A8114B; line-height: 1.3;">Baila con músicos en un escenario</h3>
+    <div class="crop" style="aspect-ratio: 0.821; margin: 0 22px; width: auto;">
+      <img src="img/musicos.jpg" alt="Baila con músicos en un escenario" style="width: 476.2%; height: 217.4%; left: -79%; top: -96.7%;" />
+    </div>
+    <div class="bd col ctr" style="padding: 22px 22px 0;">
+      <p>Durante el programa tendrás la oportunidad de participar en un intensivo presencial de 10 días para llevar todo lo aprendido a la práctica con cante y guitarra y puedas vivir la experiencia del escenario.</p>
+    </div>
+    <h3 style="margin: 38px 22px 16px; text-align: center; font-family: 'Jost', sans-serif; font-weight: 500; font-size: 17px; letter-spacing: 0.14em; text-transform: uppercase; color: #A8114B; line-height: 1.3;">Comparte el camino</h3>
+    <div class="crop" style="aspect-ratio: 1.279; margin: 0 22px; width: auto;">
+      <img src="img/musicos.jpg" alt="Comparte el camino" style="width: 370.4%; height: 263.2%; left: -233.3%; top: -23.7%;" />
+    </div>
+    <div class="bd col ctr" style="padding: 22px 22px 0;">
+      <p>Formarás parte de una comunidad privada en Discord, junto a otros compañeros que están atravesando el mismo proceso.</p>
+      <p>Un espacio para compartir avances, dudas, descubrimientos y experiencias mientras cada uno encuentra su propia manera de bailar.</p>
+      <p>Porque aprender a improvisar no consiste solamente en saber qué hacer. Consiste en tener un espacio donde puedas practicarlo, equivocarte, corregirlo y volver a intentarlo.</p>
+    </div>
+  </section>
+
+  <!-- 12 BONOS -->
+  <section data-screen-label="12 Bonos" style="position: relative; overflow: hidden; background: #140604;">
+    <div style="position: absolute; left: 0; right: 0; top: 0; height: 62%; overflow: hidden; line-height: 0;">
+      <img src="img/bonos-fondo.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; display: block; opacity: 0.5;" />
+      <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(20,6,4,0.35), rgba(20,6,4,0.9));"></div>
+    </div>
+    <h2 style="position: relative; container-type: inline-size; margin: 0; padding: 40px 22px 26px; text-align: center; font-family: 'Jost', sans-serif; font-weight: 400; font-size: 21px; line-height: 1.3; letter-spacing: 0.14em; text-transform: uppercase; color: #FFF6E2; text-shadow: 0 4px 20px rgba(10,3,2,0.8);"><span style="display: block;">Bonos del</span><span style="display: block; white-space: nowrap; font-size: min(4.4cqw, 18px); letter-spacing: 0.04em;">Programa Flamencoholicos</span></h2>
+    <div id="bonos-rail" style="position: relative; display: flex; align-items: center; gap: 18px; overflow-x: auto; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; scrollbar-width: none; padding: 0 0 10px;">
+      <div aria-hidden="true" style="flex: 0 0 calc(7% - 18px);"></div>
+
+      <div style="flex: 0 0 86%; scroll-snap-align: center; filter: drop-shadow(0 18px 34px rgba(0,0,0,0.6));">
+        <div style="position: relative; width: 100%; aspect-ratio: 1086 / 565; container-type: inline-size; background: url('img/papel-top.png') center bottom / 100% 100% no-repeat;">
+          <span style="position: absolute; left: 48.8%; top: 70.3%; transform: translate(-50%, -50%); font-family: 'Bodoni Moda', serif; font-weight: 500; font-size: 13.5cqw; line-height: 1; color: #7A0D18; text-shadow: 0 1px 0 rgba(255,168,158,0.5), 0 -1px 1px rgba(38,2,6,0.85), 0 2px 3px rgba(38,2,6,0.4);">F</span>
+        </div>
+        <div style="position: relative; margin-top: -1px; padding: 1.3em 15% 2.1em 16%; background: url('img/papel-mid.png') center top / 100% auto repeat-y; font-family: 'Jost', sans-serif; color: #262421; line-height: 1.5; display: flex; flex-direction: column; gap: 0.7em; font-size: 14px; text-wrap: pretty;">
+          <p style="margin: 0 0 0.2em; font-size: 1.1em; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: #A0121A; line-height: 1.25;">Bono 01 — Formación para siempre</p>
+          <p style="margin: 0;">Una vez terminado tu año en FLAMENCOHOLICOS, no pierdes el acceso a la formación pregrabada.</p>
+          <p style="margin: 0;">Podrás volver a las clases, repasar conceptos y recuperar contenidos siempre que lo necesites.</p>
+        </div>
+        <div style="position: relative; margin-top: -1px; width: 100%; padding-top: 20.5%; overflow: hidden; background: url('img/papel-bot.png') center top / 100% auto no-repeat;"></div>
+      </div>
+
+      <div style="flex: 0 0 86%; scroll-snap-align: center; filter: drop-shadow(0 18px 34px rgba(0,0,0,0.6));">
+        <div style="position: relative; width: 100%; aspect-ratio: 1086 / 565; container-type: inline-size; background: url('img/papel-top.png') center bottom / 100% 100% no-repeat;">
+          <span style="position: absolute; left: 48.8%; top: 70.3%; transform: translate(-50%, -50%); font-family: 'Bodoni Moda', serif; font-weight: 500; font-size: 13.5cqw; line-height: 1; color: #7A0D18; text-shadow: 0 1px 0 rgba(255,168,158,0.5), 0 -1px 1px rgba(38,2,6,0.85), 0 2px 3px rgba(38,2,6,0.4);">F</span>
+        </div>
+        <div style="position: relative; margin-top: -1px; padding: 0.5em 15% 1.6em 16%; background: url('img/papel-mid.png') center top / 100% auto repeat-y; font-family: 'Jost', sans-serif; color: #262421; line-height: 1.5; display: flex; flex-direction: column; gap: 0.7em; font-size: 14px; text-wrap: pretty;">
+          <p style="margin: 0 0 0.2em; font-size: 1.1em; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: #A0121A; line-height: 1.25;">Bono 02 — Cierra el año como se merece</p>
+          <p style="margin: 0;">Al finalizar el programa tendrás un evento online en directo de cierre para celebrar todo el recorrido realizado.</p>
+          <p style="margin: 0;">Y recibirás tu certificación digital de FLAMENCOHOLICOS directamente por email.</p>
+          <p style="margin: 0;">Un reconocimiento a todo el trabajo, aprendizaje y transformación que has realizado durante el programa.</p>
+        </div>
+        <div style="position: relative; margin-top: -1px; width: 100%; padding-top: 20.5%; overflow: hidden; background: url('img/papel-bot.png') center top / 100% auto no-repeat;"></div>
+      </div>
+
+      <div style="flex: 0 0 86%; scroll-snap-align: center; filter: drop-shadow(0 18px 34px rgba(0,0,0,0.6));">
+        <div style="position: relative; width: 100%; aspect-ratio: 1086 / 565; container-type: inline-size; background: url('img/papel-top.png') center bottom / 100% 100% no-repeat;">
+          <span style="position: absolute; left: 48.8%; top: 70.3%; transform: translate(-50%, -50%); font-family: 'Bodoni Moda', serif; font-weight: 500; font-size: 13.5cqw; line-height: 1; color: #7A0D18; text-shadow: 0 1px 0 rgba(255,168,158,0.5), 0 -1px 1px rgba(38,2,6,0.85), 0 2px 3px rgba(38,2,6,0.4);">F</span>
+        </div>
+        <div style="position: relative; margin-top: -1px; padding: 1.3em 15% 2.1em 16%; background: url('img/papel-mid.png') center top / 100% auto repeat-y; font-family: 'Jost', sans-serif; color: #262421; line-height: 1.5; display: flex; flex-direction: column; gap: 0.7em; font-size: 14px; text-wrap: pretty;">
+          <p style="margin: 0 0 0.2em; font-size: 1.1em; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: #A0121A; line-height: 1.25;">Bono 03 — Espectáculo en tablao</p>
+          <p style="margin: 0;">Como alumno de FLAMENCOHOLICOS tendrás acceso al Congreso Circular de Tablao, una experiencia presencial de 3 días en la que podrás poner en práctica todo lo aprendido en un espectáculo en tablao.</p>
+          <p style="margin: 0;">Durante el año se realizarán 4 convocatorias en diferentes ciudades del mundo, y podrás asistir a la que corresponda en tu país, independientemente de la convocatoria en la que hayas realizado el programa.</p>
+        </div>
+        <div style="position: relative; margin-top: -1px; width: 100%; padding-top: 20.5%; overflow: hidden; background: url('img/papel-bot.png') center top / 100% auto no-repeat;"></div>
+      </div>
+
+      <div aria-hidden="true" style="flex: 0 0 calc(7% - 18px);"></div>
+    </div>
+    <div style="position: relative; display: flex; align-items: center; justify-content: center; gap: 14px; padding: 14px 0 0;">
+      <button id="bono-prev" type="button" aria-label="Bono anterior" style="display: flex; align-items: center; justify-content: center; width: 34px; height: 34px; padding: 0; border: 0; background: none; color: #FFF6E2; opacity: 0.55; cursor: pointer; font-family: 'Jost', sans-serif; font-size: 20px; line-height: 1;">&#8249;</button>
+      <div style="display: flex; gap: 8px;">
+      <span class="bdot" style="width: 7px; height: 7px; border-radius: 50%; background: #FFF6E2; opacity: 1; display: block; transition: opacity 0.25s;"></span>
+      <span class="bdot" style="width: 7px; height: 7px; border-radius: 50%; background: #FFF6E2; opacity: 0.35; display: block; transition: opacity 0.25s;"></span>
+      <span class="bdot" style="width: 7px; height: 7px; border-radius: 50%; background: #FFF6E2; opacity: 0.35; display: block; transition: opacity 0.25s;"></span>
+      </div>
+      <button id="bono-next" type="button" aria-label="Bono siguiente" style="display: flex; align-items: center; justify-content: center; width: 34px; height: 34px; padding: 0; border: 0; background: none; color: #FFF6E2; opacity: 0.9; cursor: pointer; font-family: 'Jost', sans-serif; font-size: 20px; line-height: 1;">&#8250;</button>
+    </div>
+    <p style="position: relative; margin: 0; padding: 12px 32px 0; text-align: center; font-family: 'Jost', sans-serif; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #FFF6E2; opacity: 0.55;">Desliza para ver los bonos</p>
+    <p style="position: relative; margin: 0; padding: 26px 32px 40px; text-align: center; font-family: 'Jost', sans-serif; font-size: 16px; line-height: 1.55; color: #FFF6E2; text-wrap: pretty;">Porque aprender a improvisar no termina cuando entiendes el concepto, sino cuando eres capaz de llevarlo al escenario.</p>
+  </section>
+
+  <!-- 09 ES PARA TI -->
+  <section data-screen-label="09 Es para ti" style="background: #FFF6E2; padding: 0 0 48px;">
+    <div style="padding: 44px 22px 26px; display: flex; flex-direction: column; align-items: center; gap: 8px; text-align: center;">
+      <p style="margin: 0; font-family: 'Montserrat', sans-serif; font-size: 26px; font-weight: 700; letter-spacing: 0.01em; text-transform: uppercase; color: #6B0B33; line-height: 1.05;">Flamencoholicos</p>
+      <p style="margin: 0; font-family: 'Jost', sans-serif; font-size: 19px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: #A8114B; line-height: 1.3;">Es para ti si…</p>
+    </div>
+    <div class="crop ph" style="aspect-ratio: 0.587;">
+      <img src="img/es-para-ti.jpg" alt="Carmen Talegona" style="width: 227.3%; height: 100%; left: -63.6%; top: 0;" />
+    </div>
+    <div style="padding: 30px 22px 0; display: flex; flex-direction: column; gap: 14px;">
+      <div class="bd col" style="gap: 12px;">
+        <div style="display: flex; gap: 0.7em; align-items: baseline;"><span style="flex: none; width: 1em; text-align: center; color: #A8114B; font-size: 0.95em;">&#10003;</span><span>Llevas tiempo bailando flamenco y, aun así, sientes que improvisar es otra historia.</span></div>
+        <div style="display: flex; gap: 0.7em; align-items: baseline;"><span style="flex: none; width: 1em; text-align: center; color: #A8114B; font-size: 0.95em;">&#10003;</span><span>Sabes hacer muchas cosas, pero cuando te toca bailar sin una coreografía delante, aparecen los nervios, las dudas o el miedo a equivocarte.</span></div>
+        <div style="display: flex; gap: 0.7em; align-items: baseline;"><span style="flex: none; width: 1em; text-align: center; color: #A8114B; font-size: 0.95em;">&#10003;</span><span>Te descubres pensando demasiado en los pasos y poco en lo que está ocurriendo en la música.</span></div>
+        <div style="display: flex; gap: 0.7em; align-items: baseline;"><span style="flex: none; width: 1em; text-align: center; color: #A8114B; font-size: 0.95em;">&#10003;</span><span>Te gustaría dejar de depender de una coreografía para sentirte seguro bailando.</span></div>
+        <div style="display: flex; gap: 0.7em; align-items: baseline;"><span style="flex: none; width: 1em; text-align: center; color: #A8114B; font-size: 0.95em;">&#10003;</span><span>Quieres tener recursos para poder reaccionar cuando algo cambia, sin quedarte bloqueado.</span></div>
+      </div>
+      <a href="https://www.carmentalegona.com/llamada-de-venta-c11042d3-c27d-4b14-970c-1e1a50f5f3d9" target="_blank" rel="noopener" class="cta" style="align-self: center; margin: 28px 0 6px;">Quiero aprender</a>
+      <p style="margin: 20px 0 4px; align-self: center; text-align: center; font-family: 'Jost', sans-serif; font-size: 19px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: #6B3405; line-height: 1.3;">No es para ti si…</p>
+      <div class="bd col" style="gap: 12px; padding: 0 6px;">
+        <div style="display: flex; gap: 0.7em; align-items: baseline;"><span style="flex: none; width: 1em; text-align: center; color: #6B3405; font-size: 0.9em;">&#10005;</span><span>Buscas aprender una nueva coreografía para repetirla de principio a fin.</span></div>
+        <div style="display: flex; gap: 0.7em; align-items: baseline;"><span style="flex: none; width: 1em; text-align: center; color: #6B3405; font-size: 0.9em;">&#10005;</span><span>Crees que improvisar consiste simplemente en acumular más pasos y más recursos.</span></div>
+        <div style="display: flex; gap: 0.7em; align-items: baseline;"><span style="flex: none; width: 1em; text-align: center; color: #6B3405; font-size: 0.9em;">&#10005;</span><span>No quieres salir de lo conocido ni enfrentarte a la incomodidad de no saber exactamente qué va a pasar.</span></div>
+        <div style="display: flex; gap: 0.7em; align-items: baseline;"><span style="flex: none; width: 1em; text-align: center; color: #6B3405; font-size: 0.9em;">&#10005;</span><span>Buscas bailar para demostrar que eres bueno, en lugar de aprender a escuchar, responder y expresarte.</span></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 13 INVERSIÓN -->
+  <section data-screen-label="13 Inversión" style="position: relative; background: #0B0708;">
+    <div style="position: absolute; inset: 0; background: url('img/inversion-fondo.jpg') center 38% / cover no-repeat; opacity: 0.5; filter: blur(2px) brightness(0.85);"></div>
+    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(11,7,8,0.62), rgba(11,7,8,0.42) 45%, rgba(11,7,8,0.78));"></div>
+    <div style="position: relative; padding: 46px 22px 52px; display: flex; flex-direction: column; gap: 34px;">
+      <div style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 12px; font-family: 'Jost', sans-serif; color: #FFF6E2; font-size: 17px; line-height: 1.5;">
+        <h3 style="margin: 0 0 4px; font-weight: 400; font-size: 21px; letter-spacing: 0.16em; text-transform: uppercase; line-height: 1.35; text-wrap: balance;">El programa Flamencoholicos incluye:</h3>
+        <p style="margin: 0;"><span style="color: #E8447E; font-size: 0.9em; margin-right: 0.5em;">✦</span><span>Programa de 12 meses</span></p>
+        <p style="margin: 0;"><span style="color: #E8447E; font-size: 0.9em; margin-right: 0.5em;">✦</span><span>Formación online pregrabada</span></p>
+        <p style="margin: 0;"><span style="color: #E8447E; font-size: 0.9em; margin-right: 0.5em;">✦</span><span>Sesiones en directo</span></p>
+        <p style="margin: 0;"><span style="color: #E8447E; font-size: 0.9em; margin-right: 0.5em;">✦</span><span>Correcciones personalizadas</span></p>
+        <p style="margin: 0;"><span style="color: #E8447E; font-size: 0.9em; margin-right: 0.5em;">✦</span><span>Preguntas y respuestas con Carmen&nbsp;Talegona cada 15 días</span></p>
+        <p style="margin: 0;"><span style="color: #E8447E; font-size: 0.9em; margin-right: 0.5em;">✦</span><span>Comunidad privada en Discord</span></p>
+        <p style="margin: 0;"><span style="color: #E8447E; font-size: 0.9em; margin-right: 0.5em;">✦</span><span>Intensivo presencial de 10 días</span></p>
+      </div>
+
+      <div style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 18px; font-family: 'Jost', sans-serif; color: #FFF6E2; font-size: 17px; line-height: 1.5;">
+        <h3 style="margin: 0; font-weight: 400; font-size: 21px; letter-spacing: 0.18em; text-transform: uppercase;">Bonos</h3>
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 0.2em;">
+          <span style="font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; color: #E8447E;">Bono 01 — Formación de por vida</span>
+          <span>Acceso de por vida a toda la formación pregrabada.</span>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 0.2em;">
+          <span style="font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; color: #E8447E;">Bono 02 — Cierre + certificación</span>
+          <span>Evento online en directo de cierre + diploma digital.</span>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 0.2em;">
+          <span style="font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; color: #E8447E;">Bono 03 — Congreso Circular de Tablao</span>
+          <span>Acceso a una experiencia de 3 días de espectáculo en tablao.</span>
+        </div>
+      </div>
+
+      <div style="border: 1px solid rgba(232,68,126,0.55); background: linear-gradient(150deg, rgba(107,11,51,0.5) 0%, rgba(18,10,11,0.62) 100%); box-shadow: 0 16px 34px rgba(0,0,0,0.4); padding: 24px 20px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 12px; font-family: 'Jost', sans-serif; color: #FFF6E2; font-size: 16px; line-height: 1.55; text-wrap: pretty;">
+        <span style="display: block; font-weight: 500; font-size: 15px; letter-spacing: 0.1em; text-transform: uppercase; color: #FFC9DC; line-height: 1.35;"><span style="color: #E8447E; margin-right: 0.5em;">✦</span>Bono especial — sesión 1:1 con Carmen Talegona</span>
+        <p style="margin: 0;">Empieza FLAMENCOHOLICOS sabiendo exactamente hacia dónde tienes que mirar.</p>
+        <p style="margin: 0;">Antes de comenzar el programa, tendrás una sesión privada 1:1 en la que se analizará tu situación, tu manera de bailar y aquello que necesitas trabajar.</p>
+        <p style="margin: 0;">Recibirás una guía personalizada para que puedas aprovechar aún más todo el recorrido y hacer que cada etapa tenga un sentido más claro para ti.</p>
+        <p style="margin: 0.2em 0 0; font-weight: 500; font-size: 14px; letter-spacing: 0.14em; text-transform: uppercase; color: #E8447E;">Exclusivo para quienes eligen el pago único.</p>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 16px;">
+        <div style="border-radius: 3px; border-bottom: 2px solid #A8114B; background: linear-gradient(168deg, #FDFAF2 0%, #F2ECDE 100%); box-shadow: 0 16px 34px rgba(0,0,0,0.45); padding: 24px 20px 26px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 8px; color: #262421;">
+          <span style="font-family: 'Jost', sans-serif; font-size: 12px; font-weight: 500; letter-spacing: 0.24em; text-transform: uppercase; color: #A8114B;">Plan anual</span>
+          <span style="font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 34px; line-height: 1;">3.000 €</span>
+          <span style="font-family: 'Jost', sans-serif; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase;">Pago único · 12 meses</span>
+        </div>
+        <div style="border-radius: 3px; border-bottom: 2px solid #E8447E; background: linear-gradient(168deg, #7E1039 0%, #5E0A2C 100%); box-shadow: 0 16px 34px rgba(0,0,0,0.45); padding: 24px 20px 26px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 8px; color: #FFF6E2;">
+          <span style="font-family: 'Jost', sans-serif; font-size: 12px; font-weight: 500; letter-spacing: 0.24em; text-transform: uppercase; color: #FFC8DC;">Plan mensual</span>
+          <span style="font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 34px; line-height: 1;">270 €<span style="font-family: 'Jost', sans-serif; font-weight: 500; font-size: 0.36em; letter-spacing: 0.06em;">/mes</span></span>
+          <span style="font-family: 'Jost', sans-serif; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase;">12 cuotas</span>
+        </div>
+      </div>
+
+      <a href="https://www.carmentalegona.com/llamada-de-venta-c11042d3-c27d-4b14-970c-1e1a50f5f3d9" target="_blank" rel="noopener" class="cta" style="align-self: center; background: #FFF6E2; color: #6E0F16; box-shadow: 0 14px 30px rgba(20,4,6,0.4);">Quiero aprender</a>
+    </div>
+  </section>
+
+  <!-- 14 CONOCE A CARMEN -->
+  <section data-screen-label="14 Conoce a Carmen" style="position: relative; overflow: hidden; background: #0B0710;">
+    <h2 style="position: relative; z-index: 2; margin: 0; padding: 46px 22px 26px; text-align: center; font-family: 'Jost', sans-serif; font-weight: 400; font-size: 22px; letter-spacing: 0.16em; text-transform: uppercase; color: #FFF6E2;">Conoce a Carmen</h2>
+    <img src="img/carmen-momentos.jpg" alt="Carmen Talegona en cinco momentos de baile" style="position: relative; z-index: 1; width: 100%; height: auto; display: block;" />
+    <div style="position: relative;">
+    <div style="position: absolute; left: 0; right: 0; top: 0; bottom: 0; z-index: 0; overflow: hidden; line-height: 0;">
+      <img src="img/carta-01.jpg" alt="" style="width: 100%; height: auto; display: block;" />
+      <img src="img/carta-02.jpg" alt="" style="width: 100%; height: auto; display: block;" />
+      <img src="img/carta-03.jpg" alt="" style="width: 100%; height: auto; display: block;" />
+      <img src="img/carta-04.jpg" alt="" style="width: 100%; height: auto; display: block;" />
+      <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(11,7,16,0) 0%, rgba(11,7,16,0.45) 16%, rgba(11,7,16,0.85) 34%, #0B0710 56%);"></div>
+    </div>
+    <div style="position: relative; z-index: 3; margin-top: -52%; padding: 0 0 46px; display: flex; flex-direction: column; align-items: center;">
+      <div id="carta-rail" style="position: relative; width: 100%; display: flex; align-items: flex-start; gap: 18px; overflow-x: auto; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; scrollbar-width: none; padding: 0 0 10px;">
+        <div aria-hidden="true" style="flex: 0 0 calc(7% - 18px);"></div>
+        <div class="carta-page" style="flex: 0 0 86%; scroll-snap-align: center; filter: drop-shadow(0 20px 40px rgba(0,0,0,0.55));">
+          <div style="position: relative; width: 100%; aspect-ratio: 1086 / 565; container-type: inline-size; background: url('img/papel-top.png') center bottom / 100% 100% no-repeat;">
+            <span style="position: absolute; left: 48.8%; top: 70.3%; transform: translate(-50%, -50%); font-family: 'Bodoni Moda', serif; font-weight: 500; font-size: 13.5cqw; line-height: 1; color: #7A0D18; text-shadow: 0 1px 0 rgba(255,168,158,0.5), 0 -1px 1px rgba(38,2,6,0.85), 0 2px 3px rgba(38,2,6,0.4);">F</span>
+          </div>
+          <div style="position: relative; margin-top: -1px; padding: 0.4em 15% 1.2em 16%; background: url('img/papel-mid.png') center top / 100% auto repeat-y; font-family: 'Cormorant Garamond', Georgia, serif; font-style: italic; font-weight: 700; color: #241F1B; font-size: 15px; line-height: 1.6; display: flex; flex-direction: column; gap: 0.7em; text-wrap: pretty;">
+            <p style="margin: 0;">Mi querido Flamencoholico,</p>
+            <p style="margin: 0;">Hay algo que he comprendido después de tantos años viviendo el flamenco desde dentro y que quizá sea una de las cosas más difíciles de explicar cuando intentamos enseñar este arte: que conocer muchos pasos y ejecutarlos a la perfección no significa saber bailar, del mismo modo que conocer muchas palabras no significa necesariamente saber mantener una conversación.</p>
+            <p style="margin: 0;">Hay un momento en el que todo lo que has aprendido deja de ser suficiente y aparece una pregunta mucho más profunda: ¿qué hago yo con todo esto que he recibido?</p>
+            <span style="margin-top: 0.6em; font-family: 'Jost', sans-serif; font-style: normal; font-weight: 400; font-size: 11px; letter-spacing: 0.2em; color: #8A7A6C; text-align: center;">1 / 6</span>
+          </div>
+          <div style="position: relative; margin-top: -1px; width: 100%; padding-top: 20.5%; overflow: hidden; background: url('img/papel-bot.png') center top / 100% auto no-repeat;"></div>
+        </div>
+        <div class="carta-page" style="flex: 0 0 86%; scroll-snap-align: center; filter: drop-shadow(0 20px 40px rgba(0,0,0,0.55));">
+          <div style="position: relative; width: 100%; aspect-ratio: 1086 / 565; container-type: inline-size; background: url('img/papel-top.png') center bottom / 100% 100% no-repeat;">
+            <span style="position: absolute; left: 48.8%; top: 70.3%; transform: translate(-50%, -50%); font-family: 'Bodoni Moda', serif; font-weight: 500; font-size: 13.5cqw; line-height: 1; color: #7A0D18; text-shadow: 0 1px 0 rgba(255,168,158,0.5), 0 -1px 1px rgba(38,2,6,0.85), 0 2px 3px rgba(38,2,6,0.4);">F</span>
+          </div>
+          <div style="position: relative; margin-top: -1px; padding: 0.4em 15% 1.2em 16%; background: url('img/papel-mid.png') center top / 100% auto repeat-y; font-family: 'Cormorant Garamond', Georgia, serif; font-style: italic; font-weight: 700; color: #241F1B; font-size: 15px; line-height: 1.6; display: flex; flex-direction: column; gap: 0.7em; text-wrap: pretty;">
+            <p style="margin: 0;">Yo misma he tenido que hacerme esa pregunta.</p>
+            <p style="margin: 0;">Nací y crecí dentro de una familia de cantaores. El flamenco estaba allí antes de que yo pudiera decidir si quería dedicarme a él o no. Lo escuché en mi casa, lo respiré desde pequeña y recibí una manera de entenderlo que venía de mucho antes que yo. Pero había algo que tenía que descubrir por mi cuenta: cómo convertir todo aquello que había recibido en una forma de expresarme desde mi propio cuerpo.</p>
+            <p style="margin: 0;">Ellos hablaban desde la voz. Yo tenía que encontrar mi manera de hablar desde el movimiento.</p>
+            <span style="margin-top: 0.6em; font-family: 'Jost', sans-serif; font-style: normal; font-weight: 400; font-size: 11px; letter-spacing: 0.2em; color: #8A7A6C; text-align: center;">2 / 6</span>
+          </div>
+          <div style="position: relative; margin-top: -1px; width: 100%; padding-top: 20.5%; overflow: hidden; background: url('img/papel-bot.png') center top / 100% auto no-repeat;"></div>
+        </div>
+        <div class="carta-page" style="flex: 0 0 86%; scroll-snap-align: center; filter: drop-shadow(0 20px 40px rgba(0,0,0,0.55));">
+          <div style="position: relative; width: 100%; aspect-ratio: 1086 / 565; container-type: inline-size; background: url('img/papel-top.png') center bottom / 100% 100% no-repeat;">
+            <span style="position: absolute; left: 48.8%; top: 70.3%; transform: translate(-50%, -50%); font-family: 'Bodoni Moda', serif; font-weight: 500; font-size: 13.5cqw; line-height: 1; color: #7A0D18; text-shadow: 0 1px 0 rgba(255,168,158,0.5), 0 -1px 1px rgba(38,2,6,0.85), 0 2px 3px rgba(38,2,6,0.4);">F</span>
+          </div>
+          <div style="position: relative; margin-top: -1px; padding: 0.4em 15% 1.2em 16%; background: url('img/papel-mid.png') center top / 100% auto repeat-y; font-family: 'Cormorant Garamond', Georgia, serif; font-style: italic; font-weight: 700; color: #241F1B; font-size: 15px; line-height: 1.6; display: flex; flex-direction: column; gap: 0.7em; text-wrap: pretty;">
+            <p style="margin: 0;">Con los años entendí que eso era lo más bonito del flamenco: recibir un lenguaje que viene de generaciones anteriores y, sin dejar de honrarlo, encontrar dentro de él un espacio para expresarlo como tú lo sientes, desde tu propia historia.</p>
+            <p style="margin: 0;">Después de más de 35 años de experiencia, más de 100 espectáculos y más de 4.000 alumnos, hay algo que tengo cada vez más claro: el flamenco se trata de aprender a escuchar más profundamente para poder transmitir, no de acumular pasos, ni de encajar en estándares establecidos.</p>
+            <p style="margin: 0;">Todos estos años enseñando me han dejado muy claro que cada vez renunciamos más a nuestra identidad para adaptarnos a las tendencias o a los grandes referentes.</p>
+            <span style="margin-top: 0.6em; font-family: 'Jost', sans-serif; font-style: normal; font-weight: 400; font-size: 11px; letter-spacing: 0.2em; color: #8A7A6C; text-align: center;">3 / 6</span>
+          </div>
+          <div style="position: relative; margin-top: -1px; width: 100%; padding-top: 20.5%; overflow: hidden; background: url('img/papel-bot.png') center top / 100% auto no-repeat;"></div>
+        </div>
+        <div class="carta-page" style="flex: 0 0 86%; scroll-snap-align: center; filter: drop-shadow(0 20px 40px rgba(0,0,0,0.55));">
+          <div style="position: relative; width: 100%; aspect-ratio: 1086 / 565; container-type: inline-size; background: url('img/papel-top.png') center bottom / 100% 100% no-repeat;">
+            <span style="position: absolute; left: 48.8%; top: 70.3%; transform: translate(-50%, -50%); font-family: 'Bodoni Moda', serif; font-weight: 500; font-size: 13.5cqw; line-height: 1; color: #7A0D18; text-shadow: 0 1px 0 rgba(255,168,158,0.5), 0 -1px 1px rgba(38,2,6,0.85), 0 2px 3px rgba(38,2,6,0.4);">F</span>
+          </div>
+          <div style="position: relative; margin-top: -1px; padding: 0.4em 15% 1.2em 16%; background: url('img/papel-mid.png') center top / 100% auto repeat-y; font-family: 'Cormorant Garamond', Georgia, serif; font-style: italic; font-weight: 700; color: #241F1B; font-size: 15px; line-height: 1.6; display: flex; flex-direction: column; gap: 0.7em; text-wrap: pretty;">
+            <p style="margin: 0;">Y como maestra, lo último que quiero es que quien aprenda conmigo baile como yo.</p>
+            <p style="margin: 0;">No tendría sentido.</p>
+            <p style="margin: 0;">No quiero crear bailaores capaces de repetir mis movimientos, mi manera de interpretar o mi forma de entender el escenario. Quiero que todo lo que yo he aprendido pueda convertirse en herramientas para que otro artista haga algo que yo no puedo hacer por el: encontrar su propia manera de hablar desde el movimiento.</p>
+            <p style="margin: 0;">En la improvisación, el cante pone en palabras lo que nosotros no podemos expresar verbalmente. La guitarra responde desde sus notas. El cuerpo escucha, recoge aquello que acaba de suceder y contesta con sus recursos.</p>
+            <span style="margin-top: 0.6em; font-family: 'Jost', sans-serif; font-style: normal; font-weight: 400; font-size: 11px; letter-spacing: 0.2em; color: #8A7A6C; text-align: center;">4 / 6</span>
+          </div>
+          <div style="position: relative; margin-top: -1px; width: 100%; padding-top: 20.5%; overflow: hidden; background: url('img/papel-bot.png') center top / 100% auto no-repeat;"></div>
+        </div>
+        <div class="carta-page" style="flex: 0 0 86%; scroll-snap-align: center; filter: drop-shadow(0 20px 40px rgba(0,0,0,0.55));">
+          <div style="position: relative; width: 100%; aspect-ratio: 1086 / 565; container-type: inline-size; background: url('img/papel-top.png') center bottom / 100% 100% no-repeat;">
+            <span style="position: absolute; left: 48.8%; top: 70.3%; transform: translate(-50%, -50%); font-family: 'Bodoni Moda', serif; font-weight: 500; font-size: 13.5cqw; line-height: 1; color: #7A0D18; text-shadow: 0 1px 0 rgba(255,168,158,0.5), 0 -1px 1px rgba(38,2,6,0.85), 0 2px 3px rgba(38,2,6,0.4);">F</span>
+          </div>
+          <div style="position: relative; margin-top: -1px; padding: 0.4em 15% 1.2em 16%; background: url('img/papel-mid.png') center top / 100% auto repeat-y; font-family: 'Cormorant Garamond', Georgia, serif; font-style: italic; font-weight: 700; color: #241F1B; font-size: 15px; line-height: 1.6; display: flex; flex-direction: column; gap: 0.7em; text-wrap: pretty;">
+            <p style="margin: 0;">Y solo cuando los tres dejan de intentar imponerse y empiezan a escucharse de verdad, ocurre algo que no puede enseñarse jamás con una coreografía: la verdad compartida, el duende…</p>
+            <p style="margin: 0;">Eso es lo que quiero que descubras.</p>
+            <p style="margin: 0;">No una colección de coreografías.</p>
+            <p style="margin: 0;">No una forma correcta de bailar.</p>
+            <p style="margin: 0;">Sino todo aquello que he aprendido durante estos años para que puedas mantener conversaciones bailando, que verdaderamente alimenten tu alma en esta interminable búsqueda interior del artista.</p>
+            <span style="margin-top: 0.6em; font-family: 'Jost', sans-serif; font-style: normal; font-weight: 400; font-size: 11px; letter-spacing: 0.2em; color: #8A7A6C; text-align: center;">5 / 6</span>
+          </div>
+          <div style="position: relative; margin-top: -1px; width: 100%; padding-top: 20.5%; overflow: hidden; background: url('img/papel-bot.png') center top / 100% auto no-repeat;"></div>
+        </div>
+        <div class="carta-page" style="flex: 0 0 86%; scroll-snap-align: center; filter: drop-shadow(0 20px 40px rgba(0,0,0,0.55));">
+          <div style="position: relative; width: 100%; aspect-ratio: 1086 / 565; container-type: inline-size; background: url('img/papel-top.png') center bottom / 100% 100% no-repeat;">
+            <span style="position: absolute; left: 48.8%; top: 70.3%; transform: translate(-50%, -50%); font-family: 'Bodoni Moda', serif; font-weight: 500; font-size: 13.5cqw; line-height: 1; color: #7A0D18; text-shadow: 0 1px 0 rgba(255,168,158,0.5), 0 -1px 1px rgba(38,2,6,0.85), 0 2px 3px rgba(38,2,6,0.4);">F</span>
+          </div>
+          <div style="position: relative; margin-top: -1px; padding: 0.4em 15% 1.2em 16%; background: url('img/papel-mid.png') center top / 100% auto repeat-y; font-family: 'Cormorant Garamond', Georgia, serif; font-style: italic; font-weight: 700; color: #241F1B; font-size: 15px; line-height: 1.6; display: flex; flex-direction: column; gap: 0.7em; text-wrap: pretty;">
+            <p style="margin: 0;">Porque el día que puedas escuchar, comprender y responder desde tu propio cuerpo, quizá descubras que aquello que llevabas tanto tiempo buscando no era aprender a improvisar.</p>
+            <p style="margin: 0;">Era encontrar tu propia voz dentro del flamenco.</p>
+            <p style="margin: 0; margin-top: 0.8em;">Con cariño,</p>
+            <p style="margin: 0; font-size: 1.3em;">Carmen Talegona</p>
+            <span style="margin-top: 0.6em; font-family: 'Jost', sans-serif; font-style: normal; font-weight: 400; font-size: 11px; letter-spacing: 0.2em; color: #8A7A6C; text-align: center;">6 / 6</span>
+          </div>
+          <div style="position: relative; margin-top: -1px; width: 100%; padding-top: 20.5%; overflow: hidden; background: url('img/papel-bot.png') center top / 100% auto no-repeat;"></div>
+        </div>
+        <div aria-hidden="true" style="flex: 0 0 calc(7% - 18px);"></div>
+      </div>
+      <div style="display: flex; align-items: center; justify-content: center; gap: 14px; padding: 16px 0 0;">
+        <button id="carta-prev" type="button" aria-label="Página anterior" style="display: flex; align-items: center; justify-content: center; width: 34px; height: 34px; padding: 0; border: 0; background: none; color: #FFF6E2; opacity: 0.25; cursor: pointer; font-family: 'Jost', sans-serif; font-size: 20px; line-height: 1;">&#8249;</button>
+        <div style="display: flex; gap: 8px;">
+        <span class="cdot" style="width: 7px; height: 7px; border-radius: 50%; background: #FFF6E2; opacity: 1; display: block; transition: opacity 0.25s;"></span>
+        <span class="cdot" style="width: 7px; height: 7px; border-radius: 50%; background: #FFF6E2; opacity: 0.35; display: block; transition: opacity 0.25s;"></span>
+        <span class="cdot" style="width: 7px; height: 7px; border-radius: 50%; background: #FFF6E2; opacity: 0.35; display: block; transition: opacity 0.25s;"></span>
+        <span class="cdot" style="width: 7px; height: 7px; border-radius: 50%; background: #FFF6E2; opacity: 0.35; display: block; transition: opacity 0.25s;"></span>
+        <span class="cdot" style="width: 7px; height: 7px; border-radius: 50%; background: #FFF6E2; opacity: 0.35; display: block; transition: opacity 0.25s;"></span>
+        <span class="cdot" style="width: 7px; height: 7px; border-radius: 50%; background: #FFF6E2; opacity: 0.35; display: block; transition: opacity 0.25s;"></span>
+        </div>
+        <button id="carta-next" type="button" aria-label="Página siguiente" style="display: flex; align-items: center; justify-content: center; width: 34px; height: 34px; padding: 0; border: 0; background: none; color: #FFF6E2; opacity: 0.9; cursor: pointer; font-family: 'Jost', sans-serif; font-size: 20px; line-height: 1;">&#8250;</button>
+      </div>
+      <p style="margin: 10px 0 0; text-align: center; font-family: 'Jost', sans-serif; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #FFF6E2; opacity: 0.55;">Desliza para seguir leyendo</p>
+      <a href="https://www.carmentalegona.com/llamada-de-venta-c11042d3-c27d-4b14-970c-1e1a50f5f3d9" target="_blank" rel="noopener" class="cta" style="margin-top: 22px;">Quiero aprender</a>
+    </div>
+    </div>
+  </section>
+
+</div>
+<script>
+function initRail(railId, dotSel, prevId, nextId){
+  var rail = document.getElementById(railId);
+  if (!rail) return;
+  var dots = document.querySelectorAll(dotSel);
+  var cards = rail.querySelectorAll('[style*="86%"]');
+  var idx = 0;
+  function go(n){
+    idx = Math.max(0, Math.min(cards.length - 1, n));
+    var c = cards[idx];
+    rail.scrollTo({ left: c.offsetLeft - (rail.clientWidth - c.offsetWidth) / 2, behavior: 'smooth' });
+  }
+  var prev = document.getElementById(prevId);
+  var next = document.getElementById(nextId);
+  if (prev) prev.addEventListener('click', function(){ go(idx - 1); });
+  if (next) next.addEventListener('click', function(){ go(idx + 1); });
+  rail.addEventListener('scroll', function(){
+    var i = Math.round(rail.scrollLeft / (rail.scrollWidth / dots.length));
+    if (i > dots.length - 1) i = dots.length - 1;
+    idx = i;
+    for (var d = 0; d < dots.length; d++) dots[d].style.opacity = (d === i) ? '1' : '0.35';
+    if (prev) prev.style.opacity = i === 0 ? '0.25' : '0.9';
+    if (next) next.style.opacity = i === dots.length - 1 ? '0.25' : '0.9';
+  }, { passive: true });
+}
+initRail('bonos-rail', '.bdot', 'bono-prev', 'bono-next');
+initRail('carta-rail', '.cdot', 'carta-prev', 'carta-next');
+</script>
